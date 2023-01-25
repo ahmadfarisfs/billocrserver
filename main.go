@@ -22,7 +22,7 @@ func main() {
 	// API
 	r.GET("/status", controllers.Status)
 	r.POST("/base64", controllers.Base64)
-	r.POST("/file", controllers.FileUpload)
+	r.POST("/file", controllers.InvoiceUpload)
 	// Sample Page
 	r.GET("/", controllers.Index)
 	r.Static("/assets", "./app/assets")
